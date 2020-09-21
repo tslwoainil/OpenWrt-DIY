@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.31.244/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.31.245/g' package/base-files/files/bin/config_generate
 
 # 清除旧版argon主题并拉取最新版
 pushd ../package/lean
