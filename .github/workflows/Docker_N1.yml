@@ -21,8 +21,8 @@ on:
       - 'config/Lean_Docker_LEDE_N1.config'
   schedule:
     - cron: 0 4 * * 5
- # watch:
- #   types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -31,7 +31,7 @@ env:
   CONFIG_FILE: config/Lean_Docker_LEDE_N1.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
